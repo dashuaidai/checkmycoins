@@ -14,15 +14,14 @@ A simple react project to start with, if you want to analyse cryptocurrency.
 [Ahr999 index](https://ahr999.com/) is to indicate if now is a good time to store bitcoin
 
 
-## Firebase depoly
+## Firebase deploy
  Check [This App](https://check-my-coins.web.app/) out.
  
 ## Useful commands
- start:
- ### `npm start`
- build:
- ### `npm run build`
- depoly:
- ### `firebase deploy --only hosting` 
- push:
- ### `git push origin main`
+ start: `npm start`
+ 
+ build: `npm run build`
+ 
+ deploy: `firebase deploy --only hosting` 
+ 
+ push:`git push origin main`
