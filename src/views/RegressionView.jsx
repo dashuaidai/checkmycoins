@@ -182,7 +182,6 @@ function RegressionView(props) {
         setOptions(prev=>{
             let newOpt={...prev};
             newOpt.series=[...prev.series];
-
             newOpt.dataset[1]={transform: def.transform}
             newOpt.series[2]= { name:def.name, type: 'line',symbol:'none', datasetIndex: 1, symbolSize: 0.1, label: { show: true, fontSize: 16 },  labelLayout: { dx: -20 }, encode: { label: 2, tooltip: 1 } };
             return newOpt;
@@ -191,9 +190,9 @@ function RegressionView(props) {
 
     return(
         <div style={{height:'100%', width: '100%'}}>
-            <h2 className={'chart-title'}> {coin.label+' Life vs Price (USD)'}</h2>
+            <h2 className={'chart-title'}> {coin.label+' Life VS Price (USD)'}</h2>
             <h3>AHR99: {ahr?ahr.toFixed(2):''}</h3>
-            <h4> If Ahr99 &#60; 0.65 allin, else if Ahr99 &#60; 1.2 Start Fix Investment</h4>
+            <h4>If Ahr99 &#60; 0.65 All In, else if Ahr99 &#60; 1.2 Start Fix Investment</h4>
             <Select
                 showSearch
                 style={{ width: 200 ,margin:16}}
@@ -215,7 +214,7 @@ function RegressionView(props) {
                 <Radio.Button value={'p2'}>Polynomial O2</Radio.Button>
                 <Radio.Button value={'p3'}>Polynomial O3</Radio.Button>
                 <Radio.Button value={'p4'}>Polynomial O4</Radio.Button>
-                <Radio.Button value={'lg'}>logarithmic</Radio.Button>
+                <Radio.Button value={'lg'}>Logarithmic</Radio.Button>
                 <Radio.Button value={'ep'}>Exponential</Radio.Button>
                 <Radio.Button value={'ln'}>Linear</Radio.Button>
             </Radio.Group>

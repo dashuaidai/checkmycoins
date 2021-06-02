@@ -217,14 +217,12 @@ function PriceView(props) {
                 lazyUpdate={false}
                 onEvents={EventsDict}
             />
-
                 <Radio.Group defaultValue={days} size="large" optionType="button" onChange={onChangeDays}>
                     <Radio.Button value={3}>3 Days</Radio.Button>
                     <Radio.Button value={7}>1 Week</Radio.Button>
                     <Radio.Button value={31}>1 Month</Radio.Button>
                     <Radio.Button value={1000}>All</Radio.Button>
                 </Radio.Group>
-
         </div>
     )
 }
