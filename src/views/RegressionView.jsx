@@ -29,9 +29,7 @@ const fetchAllData=(options)=>{
                 let newItem=[life,price,logPrice,volume,ma200[idx],time,timestamp]
                 return newItem;
             });
-
             let columns=['life','price','logPrice','volume','ma200','time','timestamp'];
-            console.log(values);
             return {values,columns}
 
         })
